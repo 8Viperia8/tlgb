@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+	<link rel="icon" href="ico.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;}	
+a {text-decoration: none; 
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #400090;
+    color: white;}
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;}
+.header .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;}
+.header .navigation ul li a {
+	text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;}
+.hero .centered-content {
+    max-width: 800px;
+    margin: 0 auto;}
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 40px 20px; 
+    justify-content: center; }
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 видео в строке */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* 1 видео в строке */
+    }
+}
+.video-grid video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.video-grid video:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #400090;
+    color: white;}
+	</style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Take a Look and Give it Back</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ad-viewing.html">Watch Ads</a></li>
+                <li><a href="charity-info.html">Charities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="centered-content">
+            <h2>Watch Videos and Support Charity</h2>
+            <p>Your time helps others! All proceeds go to charity.</p>
+        </div>
+    </section>
+    <main class="content">
+        <section class="video-grid">
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="1.mp4" type="video/mp4">
+                Video 1
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="2.mp4" type="video/mp4">
+                Video 2
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="3.mp4" type="video/mp4">
+                Video 3
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="4.mp4" type="video/mp4">
+                Video 4
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="5.mp4" type="video/mp4">
+                Video 5
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="6.mp4" type="video/mp4">
+                Video 6
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="7.mp4" type="video/mp4">
+                Video 7
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="8.mp4" type="video/mp4">
+                Video 8
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="9.mp4" type="video/mp4">
+                Video 9
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="10.mp4" type="video/mp4">
+                Video 10
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="13.mp4" type="video/mp4">
+                Video 11
+            </video>
+            <video controls preload="metadata" id="current-video" muted autoplay loop>
+                <source src="12.mp4" type="video/mp4">
+                Video 12
+            </video>
+        </section>
+        <section class="additional-sections">
+            <div class="achievement-counter">
+                <h3>Our Impact(lie)</h3>
+                <p>$50,000 Raised | 1,000 Lives Touched</p>
+            </div>
+        </section>
+    </main>
+    <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="ad-viewing.html">Start Watching Ads </a><i class="fa-regular fa-circle-play"></i></li>
+            <li><a href="charity-info.html">Learn About Charities </a><i class="fa-regular fa-clipboard"></i></li>
+           <!--<a href="#">FAQ <i class="fa-regular fa-bookmark"></i></a></li> -->
+            <li>
+			<a href="https://t.me/+K0639x8p5N8wNTJi" target="_blank">
+			<span>Join us on Telegram </span></a><i class="fa-regular fa-paper-plane"></i></li>
+        </ul>
+    </aside>
+    <footer class="footer">
+        <p>&copy; 2025 Take a Look and Give Back. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

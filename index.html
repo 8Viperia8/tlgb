@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Look and Give it Back</title>
+	<link rel="icon" href="ico.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<style>:
+	body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #400090;
+    color: white;}
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;}
+.header .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;}
+.header .navigation ul li a {
+	text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;}
+.search-bar {
+    display: flex;
+    align-items: center;}
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;}
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;}
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #400090;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;}
+.content {
+    padding: 20px;}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;}
+.news-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;}
+.news-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;}
+.news-card h3 {
+    font-size: 20px;
+    margin: 10px 0;}
+.news-card p {
+    font-size: 14px;
+    margin-bottom: 10px;}
+a {text-decoration: none; 
+}
+.news-card a {
+    color: #400090;
+    text-decoration: none;
+    font-weight: bold;}
+.additional-sections {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;}
+.quotes_from_Statham, .achievement-counter {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;}
+.sidebar {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;}
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;}
+.sidebar ul {
+    list-style: none;
+    padding: 0;}
+.sidebar ul li a {
+    color: #400090;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 5px 0;}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #400090;
+    color: white;}
+table {
+    display: block; /* Изменяем тип отображения таблицы */
+    max-height: 145px; /* Максимальная высота таблицы */
+    overflow: hidden; /* Добавляем вертикальную прокрутку */
+}
+	</style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Take a Look and Give Back</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ad-viewing.html">Watch Ads</a></li>
+                <li><a href="charity-info.html">Charities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Watch Ads and Help People</h2>
+        <p>All proceeds go to charity. Start making a difference today!</p>
+        <a href="ad-viewing.html" class="cta-button">Start Watching</a>
+    </section>
+    <main class="content">
+        <!-- Раздел новостей -->
+        <section class="news-grid">
+            <article class="news-card">
+                <img src="14.jpg" alt="Charity Event">
+                <h3>Supporting Children in Need</h3>
+                <p>Learn how your contributions are helping children worldwide.</p>
+                <a href="https://www.twinkl.co.uk/teaching-wiki/children-in-need">Read More</a>
+            </article>
+            <article class="news-card">
+                <img src="13.png" alt="Medical Aid">
+                <h3>Medical Aid for Refugees</h3>
+                <p>Discover the impact of donations on refugee health programs.</p>
+                <a href="https://www.volunteerglobalhealth.org/project/mardi-medical-aid-for-refugees-and-displaced-people/">Read More</a>
+            </article>
+            <article class="news-card">
+                <img src="12.jpg" alt="Education">
+                <h3>Education for All</h3>
+                <p>Help us provide education to underprivileged communities.</p>
+                <a href="https://www.un.org/en/academic-impact/education-all">Read More</a>
+            </article>
+        </section>
+
+        <!-- Добавленные секции -->
+        <section class="additional-sections">
+            <div class="quotes_from_Statham">
+			<h3>Weather</h3>
+			<table align=center cellpadding=0 cellspacing=0 width=300 style="border:solid 1px #ffffff;font-family:Arial;font-size:12px;background-color:#fdfbf2">
+				<tr>
+					<td>
+						<table width=100% cellpadding=0 cellspacing=0>
+							<tr>
+								<td width=100 height=30 background="https://rp5.ru/informer/htmlinfa/topshl.png" bgcolor=#fefcf6> </td>
+								<td width=* align=center background="https://rp5.ru/informer/htmlinfa/topsh.png" bgcolor=#fefcf6>
+									<a style="color:#000000; font-family:Arial;font-size: 12px;" href="https://rp5.ru/7285/ru"><b>Saint-Petersburg</b></a>
+								</td>
+								<td width=8 height=30 background="https://rp5.ru/informer/htmlinfa/topshr.png" bgcolor=#fefcf6></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top style="padding:0;">
+						<iframe src="https://rp5.ru/htmla.php?id=7285&lang=ru&um=00000&bg=%23fdfbf2&ft=%23000000&fc=%23ffffff&c=%23000000&f=Arial&s=12&sc=2" width=100% height=140 frameborder=0 scrolling=no style="margin:0;"></iframe>
+					</td>
+				</tr>
+			</table>
+			</div>
+            <!-- Счетчик достижений -->
+            <div class="achievement-counter">
+                <h3>Our Impact(lie)</h3>
+                <p>$50,000 Raised | 1,000 Lives Touched</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="ad-viewing.html">Start Watching Ads <i class="fa-regular fa-circle-play"></i></a></li>
+            <li><a href="charity-info.html">Learn About Charities <i class="fa-regular fa-clipboard"></i></a></li>
+            <!--<a href="#">FAQ <i class="fa-regular fa-bookmark"></i></a></li> -->
+            <li>
+			<a href="https://t.me/+K0639x8p5N8wNTJi" target="_blank">
+			<span>Join us on Telegram </span><i class="fa-regular fa-paper-plane"></i></a></li>
+        </ul>
+    </aside>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>&copy; 2025 Take a Look and Give Back. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
